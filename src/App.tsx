@@ -1,13 +1,18 @@
-import styles from './App.module.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-export function App() {
+import { AnimatedRoutes } from './routes/router';
+import Navigation from './components/Navigation';
+
+const App: React.FC = () => {
   return (
-    <>
-      <header>
-        <h1>HubX Frontend Assignment</h1>
-      </header>
-
-      <main className={styles.main}></main>
-    </>
+    <Router>
+      <div className="App app">
+        <AnimatedRoutes />
+        <Navigation />
+      </div>
+    </Router>
   );
-}
+};
+
+export default App;
