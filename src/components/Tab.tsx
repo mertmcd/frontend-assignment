@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/tab.css';
-import { motion } from 'framer-motion';
+import { motion, TargetAndTransition } from 'framer-motion';
 import { TabProps } from '../types/tab';
 import { getAnimationForImage } from '../helpers/getAnimationForImage';
 
@@ -34,9 +34,9 @@ const Tab: React.FC<TabProps> = ({
 
             return (
               <motion.img
-                initial={initial as any}
-                animate={animate as any}
-                transition={transition as any}
+                initial={initial as TargetAndTransition}
+                animate={animate as TargetAndTransition}
+                transition={transition as TargetAndTransition}
                 key={image}
                 src={`public/images/${image}`}
                 alt={`Image ${index}`}
