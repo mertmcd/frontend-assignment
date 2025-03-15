@@ -8,7 +8,7 @@ import ExportShare from '../pages/ExportShare';
 
 import { AnimatePresence } from 'framer-motion';
 
-export const AnimatedRoutes = () => {
+export const TabRoutes = () => {
   const location = useLocation();
 
   return (

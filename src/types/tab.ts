@@ -5,4 +5,5 @@ export interface TabProps {
   buttonText: string;
   images: string[];
   id: string;
+  name: string;
 }

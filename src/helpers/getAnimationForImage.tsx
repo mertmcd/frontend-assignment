@@ -5,13 +5,13 @@ export const getAnimationForImage = (
   index: number,
   dynamicClass: string,
 ): AnimationConfig => {
-  const customAnimation = animations.find(
+  const animation = animations.find(
     (animation) =>
       animation.index.includes(index) &&
       animation.dynamicClass.includes(dynamicClass),
   );
   return (
-    customAnimation || {
+    animation || {
       initial: {},
       animate: {},
       transition: {},
