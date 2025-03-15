@@ -6,6 +6,7 @@ const AdvancedFiltersImages = [
   'img-advanced-filters-2.png',
   'img-advanced-filters-3.png',
 ];
+
 const AdvancedFilters: React.FC = () => {
   const title = 'ADVANCED FILTERS';
   const header = 'Unique Filters';

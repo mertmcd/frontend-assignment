@@ -37,7 +37,7 @@ const Tab: React.FC<TabProps> = ({
                 initial={initial as any}
                 animate={animate as any}
                 transition={transition as any}
-                key={index}
+                key={image}
                 src={`public/images/${image}`}
                 alt={`Image ${index}`}
               />
@@ -47,8 +47,8 @@ const Tab: React.FC<TabProps> = ({
         <div className="content">
           <h1>{title}</h1>
           <h2>{header}</h2>
-          {description.map((desc, index) => (
-            <p key={index}>{desc}</p>
+          {description.map((desc) => (
+            <p key={desc}>{desc}</p>
           ))}
           <button type="button">{buttonText}</button>
         </div>
