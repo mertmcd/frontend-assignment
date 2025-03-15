@@ -22,6 +22,7 @@ const Tab: React.FC<TabProps> = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       key={id}
+      className="tabs"
     >
       <div className="tab">
         <div className={`image-container ${dynamicClass}`}>

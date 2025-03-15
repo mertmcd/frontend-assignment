@@ -24,7 +24,7 @@ export const animations: AnimationConfig[] = [
     index: [1],
   },
   {
-    initial: { scale: 0, top: '50%', x: '-50%', width: '60%' },
+    initial: { scale: 0, top: '50%', x: '-50%', left: '5%', width: '60%' },
     animate: { scale: 1 },
     transition: { duration: 0.3, ease: 'easeOut', delay: 0.8 },
     dynamicClass: ['anim-sign-stamp'],
