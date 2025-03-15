@@ -11,8 +11,9 @@ const Tab: React.FC<TabProps> = ({
   buttonText,
   images,
   id,
+  name,
 }) => {
-  const dynamicClass = `anim-${title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`;
+  const dynamicClass = `anim-${name}`;
 
   return (
     <motion.div
@@ -36,7 +37,7 @@ const Tab: React.FC<TabProps> = ({
                 animate={animate as any}
                 transition={transition as any}
                 key={index}
-                src={`src/img/${image}`}
+                src={`public/images/${image}`}
                 alt={`Image ${index}`}
               />
             );

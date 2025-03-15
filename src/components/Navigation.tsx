@@ -485,7 +485,7 @@ const Navigation: React.FC = () => {
               </clipPath>
             </defs>
           </svg>
-          Sing & Stamp
+          Sign & Stamp
         </Link>
       </li>
       <li className={activeItem === '/batch-scanning' ? 'active' : ''}>
