@@ -33,3 +33,13 @@ npm run lint
 ```sh
 npm run format
 ```
+
+## Screenshots
+
+### Desktop
+
+![Desktop](./public/screenshots/img-desktop.png)
+
+### Mobile
+
+![Mobile](./public/screenshots/img-mobile.png)
